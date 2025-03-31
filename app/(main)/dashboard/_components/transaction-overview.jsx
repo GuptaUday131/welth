@@ -21,6 +21,8 @@ import {
 } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const COLORS = [
   "#FF6B6B",
@@ -84,6 +86,9 @@ export function DashboardOverview({ accounts, transactions }) {
           <CardTitle className="text-base font-normal">
             Recent Transactions
           </CardTitle>
+          <Button asChild variant="outline">
+            <Link href="/account/fbdd1937-2418-4222-98af-f7135e765b41">Transcation overview</Link>
+          </Button>
           <Select
             value={selectedAccountId}
             onValueChange={setSelectedAccountId}
