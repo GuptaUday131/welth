@@ -87,7 +87,7 @@ export function DashboardOverview({ accounts, transactions }) {
             Recent Transactions
           </CardTitle>
           <Button asChild variant="outline">
-            <Link href="/account/fbdd1937-2418-4222-98af-f7135e765b41">Transcation overview</Link>
+            <Link href="/account/?">Transcation overview</Link>
           </Button>
           <Select
             value={selectedAccountId}
